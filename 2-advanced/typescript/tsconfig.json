@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "target": "ES5",
+        "moduleResolution": "node",
+        "sourceMap": true
+    },
+    "include": ["src/**/*"]
+}

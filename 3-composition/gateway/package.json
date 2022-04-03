@@ -1,0 +1,29 @@
+{
+  "name": "understanding_graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\""
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-tools/schema": "^8.3.3",
+    "@graphql-tools/utils": "^8.6.3",
+    "@graphql-tools/wrap": "^8.4.10",
+    "apollo-server": "^3.6.4",
+    "concurrently": "^7.0.0",
+    "graphql": "^16.3.0",
+    "node-fetch": "^3.2.3",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "@graphql-tools/stitch": "^8.6.3",
+    "@tsconfig/node16": "^1.0.2",
+    "typescript": "^4.6.2"
+  }
+}
