@@ -6,7 +6,9 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\""
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+    "simple_stitching": "concurrently \"tsc --watch\" \"nodemon dist/simple_stitching.js\"",
+    "stitching_with_delegate": "concurrently \"tsc --watch\" \"nodemon dist/stitching_with_delegate.js\""
   },
   "type": "module",
   "author": "",

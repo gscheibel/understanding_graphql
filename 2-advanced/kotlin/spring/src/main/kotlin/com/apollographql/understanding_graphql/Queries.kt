@@ -2,6 +2,7 @@ package com.apollographql.understanding_graphql
 
 import com.apollographql.understanding_graphql.directives.AdminOnlyDirective
 import com.apollographql.understanding_graphql.directives.LowerCaseDirective
+import com.apollographql.understanding_graphql.instrumentation.TrackInvocationDirective
 import com.expediagroup.graphql.server.operations.Query
 import graphql.schema.DataFetchingEnvironment
 import org.springframework.stereotype.Component
@@ -9,6 +10,8 @@ import java.util.*
 
 @Component
 class SpaceCatQuery(val mission: Mission) : Query {
+
+    @TrackInvocationDirective
     fun cat(id: Int = 0): SpaceCat {
         return SpaceCat(name = "Neil Catstrong")
     }

@@ -1,4 +1,4 @@
-package com.apollographql.understanding_graphql
+package com.apollographql.understanding_graphql.context
 
 import com.expediagroup.graphql.server.spring.execution.DefaultSpringGraphQLContextFactory
 import org.springframework.stereotype.Component

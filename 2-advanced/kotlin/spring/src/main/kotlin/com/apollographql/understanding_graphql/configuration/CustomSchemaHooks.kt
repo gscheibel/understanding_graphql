@@ -1,4 +1,4 @@
-package com.apollographql.understanding_graphql
+package com.apollographql.understanding_graphql.configuration
 
 import com.apollographql.understanding_graphql.directives.ADMIN_DIRECTIVE_NAME
 import com.apollographql.understanding_graphql.directives.AdminOnlyDirectiveWiring

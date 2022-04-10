@@ -7,10 +7,11 @@ import {
 const typeDefs = gql`
    type Query {
       cat: SpaceCat!
+      catById(id: Int): SpaceCat!
    }
 
    type SpaceCat {
-      id: ID
+      id: Int
       name: String
    }
 `;
@@ -20,8 +21,15 @@ const resolvers = {
     cat: () => {
       return {
         name: "Neew Catstrong",
-        id: "1"
+        id: 1
       }
+    },
+
+    catById: (id: Number) => {
+        return {
+            name: `Neew Catstrong - ${id}`,
+            id: id
+        }
     }
   }
 }
