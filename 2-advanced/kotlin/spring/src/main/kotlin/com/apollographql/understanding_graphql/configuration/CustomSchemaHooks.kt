@@ -13,11 +13,6 @@ import java.util.*
 import kotlin.reflect.KClass
 import kotlin.reflect.KType
 
-
-class CustomHooksProvider: SchemaGeneratorHooksProvider {
-    override fun hooks(): SchemaGeneratorHooks = CustomSchemaGeneratorHooks()
-}
-
 class CustomSchemaGeneratorHooks : SchemaGeneratorHooks {
     override fun willGenerateGraphQLType(type: KType): GraphQLType? {
         return when (type.classifier as? KClass<*>) {

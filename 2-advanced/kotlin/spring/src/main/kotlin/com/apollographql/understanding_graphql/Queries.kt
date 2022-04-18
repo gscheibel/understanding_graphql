@@ -18,7 +18,7 @@ class SpaceCatQuery(val mission: Mission) : Query {
 
     @AdminOnlyDirective
     fun where() = mission
-   // fun withUUID(): UUID = UUID.randomUUID()
+    fun withUUID(): UUID = UUID.randomUUID()
     fun withUUIDAsString(): String = UUID.randomUUID().toString()
 
     fun withUUIDFromString(uuid: String): String = UUID.fromString(uuid).toString()
